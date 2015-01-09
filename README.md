@@ -12,17 +12,17 @@ Installation:
 
 then add 
 
-    */5 * * * * wget -q -O /etc/fastd/fastd-blacklist.json https://raw.githubusercontent.com/ffruhr/fastdbl/master/fastd-blacklist.json
+    */5 * * * * wget -q -O /etc/fastd/tro/fastd-blacklist.json https://raw.githubusercontent.com/Freifunk-Troisdorf/fastdbl/master/fastd-blacklist.json
 
 2 - download the Scipt and make it Xecutable:
 
-    wget -O /etc/fastd/fastd-blacklist.sh https://raw.githubusercontent.com/ffruhr/fastdbl/master/fastd-blacklist.sh
-    chmod +x /etc/fastd/fastd-blacklist.sh
+    wget -O /etc/fastd/fastd-blacklist.sh https://raw.githubusercontent.com/Freifunk-Troisdorf/fastdbl/master/fastd-blacklist.sh
+    chmod +x /etc/fastd/tro/fastd-blacklist.sh
 
 3 - Add the following to your fastd.conf:
 
     on verify "
-      /etc/fastd/fastd-blacklist.sh $PEER_KEY
+      /etc/fastd/tro/fastd-blacklist.sh $PEER_KEY
     ";
 
 4 - restart your fastd and you are ready to go:
