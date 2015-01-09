@@ -16,7 +16,7 @@ then add
 
 2 - download the Scipt and make it Xecutable:
 
-    wget -O /etc/fastd/fastd-blacklist.sh https://raw.githubusercontent.com/Freifunk-Troisdorf/fastdbl/master/fastd-blacklist.sh
+    wget -O /etc/fastd/tro/fastd-blacklist.sh https://raw.githubusercontent.com/Freifunk-Troisdorf/fastdbl/master/fastd-blacklist.sh
     chmod +x /etc/fastd/tro/fastd-blacklist.sh
 
 3 - Add the following to your fastd.conf:
