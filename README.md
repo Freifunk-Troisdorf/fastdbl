@@ -22,7 +22,7 @@ dort einfügen:
 	status socket "/var/run/fastd-status.sock";
 
     on verify "
-      /etc/fastd/tro/fastbl/fastd-blacklist.sh $PEER_KEY
+      /etc/fastd/tro/fastdbl/fastd-blacklist.sh $PEER_KEY
     ";
 
 4 - Fastd Socket Status Script installieren:
