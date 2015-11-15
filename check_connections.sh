@@ -14,7 +14,7 @@
 
 NETWORKSIZE="`/usr/local/sbin/batctl o | /usr/bin/wc -l`"
 NUMGATEWAYS="`/usr/local/sbin/batctl gwl | sed -r 's/([^\.]*)\(.*/\1/' | sed '/04:74:05:d0:4f/d' | sed $= -n`"
-NETWORKSIZE="`/usr/bin/expr ${NETWORKSIZE} + 20`"
+NETWORKSIZE="`/usr/bin/expr ${NETWORKSIZE} + 1`"
 if [ ${NUMGATEWAYS} -eq 0 ]; then
     NUMGATEWAYS=1
 fi
